@@ -1,0 +1,91 @@
+@model IEnumerable<NS.FRN.Data.Entities.Cart>
+@{ Layout= "../../views/shared/_Layout2.cshtml";
+    
+}
+<style>
+    table {
+        border-collapse: collapse;
+        width: 100%;
+    }
+    th,
+    td {
+        padding: 8px;
+        text-align: left;
+    }
+    th {
+        background-color: #232423;
+        color: white;
+    }
+    tr:nth-child(even) {
+        background-color: #F2F2F2;
+    }
+    a {
+        color: black;
+        text-decoration: none;
+    }
+    a:hover {
+        color: red;
+        text-decoration: underline;
+    }
+</style>
+ <div class="col-md-12 text-center">
+       <h1>Cart Items</h1>
+</div>
+</div>
+<div class="container">
+    @using (Html.BeginForm("BuyNow", "Furniture", FormMethod.Post, new {id="formRegistration",enctype="multipart/form-data"}))
+{
+<table>
+    <thead>
+        <tr>
+         <th>Product</th>
+         <th>Name</th>
+         <th>Quantity</th>
+         <th>Price</th>
+        </tr>
+    </thead>
+    <tbody>
+      @if(Model!=null) { for (int i=0;i<Model.Count();i++)
+        {
+            var prod=Model.ToList()[i];
+            <tr>
+                <td>
+                    <img src="~/Uploads/@prod.Product.Photo" height=20% width=20% alt="NO IMAGE FOUND" srcset="">
+                </td>
+                <td>
+                   @prod.Product.Name
+                    @Html.HiddenFor(x=>Model.ToList()[i].Product.Id)
+                     @Html.HiddenFor(x=>Model.ToList()[i].Id)
+                </td>
+                 <td>
+                      @prod.Quantity
+                     @Html.HiddenFor(x=>@Model.ToList()[i].Quantity)
+
+                </td>
+                 <td>
+                   @Html.HiddenFor(x=>@Model.ToList()[i].Product.Price)
+                     ₹ @prod.Product.Price
+                </td>
+            </tr>
+        }}
+    </tbody>
+</table>
+@if(Model.Count()==0){
+    <div style="text-align:center;"><h1 style="text-align: center;color:red; margin: 20px;">There are no items in cart</h1></div>
+
+}else{
+<div class="text-center pt-3"
+ style="background-color:rgb(145, 144, 151);border-Radius:20px;color:rgb(18, 17, 17);">
+      Cart Total : @Model.Sum(item => Convert.ToDecimal(item.Product.Price)).ToString()
+      </div>
+      <div class="text-center pt-7">
+        <a asp-action="BuyNow" asp-controller="Furniture">
+        <button type="submit" id="btnUpdate" class="btn"
+        style="background-color:rgb(10, 1, 1);border-Margin:20px;color:rgb(224, 211, 211);">Buy Now</button>
+        </a>
+    
+</div>
+}
+
+}
+</div>

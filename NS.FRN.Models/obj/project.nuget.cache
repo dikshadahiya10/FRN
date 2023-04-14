@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "V0nDfwjuwtVFc1VH2S0gbYXxB0zQJ193koCtwy8veWobIImyyLOs9oOebVuDUAW91PcjNduACnVG22K68vTO8Q==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\diksha.dahiya\\FRN\\NS.FRN.Models\\NS.FRN.Models.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\diksha.dahiya\\.nuget\\packages\\system.componentmodel.annotations\\5.0.0\\system.componentmodel.annotations.5.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

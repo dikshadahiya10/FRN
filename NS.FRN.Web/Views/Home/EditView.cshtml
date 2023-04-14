@@ -1,0 +1,68 @@
+@model NS.FRN.Data.Entities.Product
+@{
+    ViewData["Title"] = "Login";
+}
+<div class="text">
+    @using(Html.BeginForm("EditView","Home",FormMethod.Post,new {id="formRegistration",enctype="multipart/form-data"}))
+    {
+<div class="form-group">
+   <label for="Dish Name" class="col-md-3 control-label">Name</label>
+    <div class="col-md-9">
+      @Html.TextBoxFor(x => x.Name, "", new { @class = "form-control", placeholder = "Name" })
+   @Html.ValidationMessageFor(x => x.Name)
+   </div>
+  </div>
+<div class="form-group">
+   <label for="cate" class="col-md-3 control-label">CategoryId</label>
+<div class="col-md-9">
+    @Html.HiddenFor(x => x.Category);
+    @Html.TextBoxFor(x => x.Category, "", new { @class = "form-control", placeholder = "CategoryId" })
+   @Html.ValidationMessageFor(x => x.Category)
+   </div>
+</div>
+<br />
+ <div class="form-group">
+   <label for="type" class="col-md-3 control-label">Price</label>
+<div class="col-md-9">
+   @Html.TextAreaFor(x => x.Price, new { @class = "form-control", placeholder = "Price" })
+   @Html.ValidationMessageFor(x => x.Price)
+</div>
+</div>
+<br />
+  <div class="form-group">
+   <label for="price " class="col-md-3 control-label">Description</label>
+    <div class="col-md-9">
+      @Html.TextBoxFor(x => x.Description, "", new { @class = "form-control", placeholder = "Description" })
+   @Html.ValidationMessageFor(x => x.Description)
+   </div>
+  </div>
+  <br>
+    @* <div class="form-group">
+   <label for="price " class="col-md-3 control-label">Photo</label>
+    <div class="col-md-9">
+       @Html.TextBoxFor(x => x.Photo, "", new { @class = "form-control", placeholder = "Photo" })
+   @Html.ValidationMessageFor(x => x.Photo)
+   </div>
+  </div> *@
+  @* <div class="form-group">
+   <label for="lastname" class="col-md-3 control-label">Photo</label>
+<div class="col-md-9">
+   <input type="file" name="Photo"/>
+</div>
+</div> *@
+  <div class="form-group">
+   <label for="price " class="col-md-3 control-label">IsEligibleForDiscount</label>
+    <div class="col-md-9">
+       @Html.TextBoxFor(x => x.IsEligibleForDiscount, "", new { @class = "form-control", placeholder = "IsEligibleForDiscount" })
+   @Html.ValidationMessageFor(x => x.IsEligibleForDiscount)
+   </div>
+  </div>
+<div class="form-group">
+   <span id="spnMessage" class="text-danger">@TempData["Message"]</span>
+   <br />
+<div class="col-md-offset-3 col-md-9">
+   <button id="btn-signup" type="submit" class="btn btn-info"><i class="icon-hand-right"></i> Submit</button>
+   <span style="margin-left:8px;"></span>
+</div>
+</div>
+    }

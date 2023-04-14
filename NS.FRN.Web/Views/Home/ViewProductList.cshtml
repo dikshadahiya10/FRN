@@ -1,0 +1,104 @@
+@model IEnumerable<NS.FRN.Data.Entities.Product>;
+@{
+    }
+<style>
+    table {
+        border-collapse: collapse;
+        width: 100%;
+    }
+    th, td {
+        padding: 8px;
+        text-align: left;
+    }
+    th {
+        background-color: #4CAF50;
+        color: white;
+    }
+    tr:nth-child(even) {
+        background-color: #F2F2F2;
+    }
+    a {
+        color: #4CAF50;
+        text-decoration: none;
+    }
+    a:hover {
+        color: #4CAF50;
+        text-decoration: underline;
+    }
+</style>
+<div>
+    <h2>Furniture Details</h2>
+</div>
+<table>
+    <thead>
+        <tr>
+            <th>Furniture Name</th>
+            <th>Category</th>
+            <th>Price</th>
+             <th>Description</th>
+              @* <th>Photo</th>
+               <th>IsEligibleForDiscount</th>
+                <th>IsActive</th>
+                 <th>IsDeleted</th>
+                  <th>CreatedOn</th>
+                   <th>CreatedBy</th>
+                    <th>ModifiedOn</th>
+                     <th>ModifiedBy</th> *@
+                      <th>Edit</th>
+                       <th>Delete</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach(var prod in Model)
+        {
+            <tr>
+                <td>
+                    <a asp-controller="Home" asp-action="ProductDetailPage" asp-route-Id="@prod.Id">@prod.Name</a>
+                </td>
+                 <td>
+                    <a asp-controller="Home" asp-action="ProductDetailPage" asp-route-Id="@prod.Id">@prod.Category</a>
+                </td>
+                 <td>
+                    <a asp-controller="Home" asp-action="ProductDetailPage" asp-route-Id="@prod.Id">@prod.Price</a>
+                </td>
+                 <td>
+                    <a asp-controller="Home" asp-action="ProductDetailPage" asp-route-Id="@prod.Id">@prod.Description</a>
+                </td>
+                 @* <td>
+                    <a asp-controller="Home" asp-action="ProductDetailPage" asp-route-Id="@prod.Id">@prod.Photo</a>
+                </td>
+                 <td>
+                    <a asp-controller="Home" asp-action="ProductDetailPage" asp-route-Id="@prod.Id">@prod.IsEligibleForDiscount</a>
+                </td>
+                 <td>
+                    <a asp-controller="Home" asp-action="ProductDetailPage" asp-route-Id="@prod.Id">@prod.IsActive</a>
+                </td>
+                 <td>
+                    <a asp-controller="Home" asp-action="ProductDetailPage" asp-route-Id="@prod.Id">@prod.IsDeleted</a>
+                </td>
+                 <td>
+                    <a asp-controller="Home" asp-action="ProductDetailPage" asp-route-Id="@prod.Id">@prod.CreatedBy</a>
+                </td>
+                 <td>
+                    <a asp-controller="Home" asp-action="ProductDetailPage" asp-route-Id="@prod.Id">@prod.CreatedOn</a>
+                </td>
+                 <td>
+                    <a asp-controller="Home" asp-action="ProductDetailPage" asp-route-Id="@prod.Id">@prod.ModifiedOn</a>
+                </td>
+                 <td>
+                    <a asp-controller="Home" asp-action="ProductDetailPage" asp-route-Id="@prod.Id">@prod.ModifiedBy</a>
+                </td> *@
+                <td>
+                    <a href="EditView/@prod.Id">Edit</a>
+                </td>
+                  <td>
+                   @if(prod.IsActive){
+                         @Html.ActionLink("DeActivate","ActivateDeactivateRecord","Furniture",new{prod.Id},new{@class="btn btn-danger",onclick="return confirm('Do you really want to Deactivate this category')"})
+                    }
+                    else{
+                          @Html.ActionLink("Activate","ActivateDeactivateRecord","Furniture",new{prod.Id},new{@class="btn btn-danger",onclick="return confirm('Do you really want to Activate this category')"})
+                    }
+            </tr>
+        }
+    </tbody>
+</table>

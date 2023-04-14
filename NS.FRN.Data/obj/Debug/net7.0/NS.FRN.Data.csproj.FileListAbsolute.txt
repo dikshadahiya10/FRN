@@ -1,0 +1,17 @@
+C:\Users\diksha.dahiya\FRN\NS.FRN.Data\bin\Debug\net7.0\NS.FRN.Data.deps.json
+C:\Users\diksha.dahiya\FRN\NS.FRN.Data\bin\Debug\net7.0\NS.FRN.Data.dll
+C:\Users\diksha.dahiya\FRN\NS.FRN.Data\bin\Debug\net7.0\NS.FRN.Data.pdb
+C:\Users\diksha.dahiya\FRN\NS.FRN.Data\bin\Debug\net7.0\NS.FRN.Models.dll
+C:\Users\diksha.dahiya\FRN\NS.FRN.Data\bin\Debug\net7.0\NS.FRN.Models.pdb
+C:\Users\diksha.dahiya\FRN\NS.FRN.Data\obj\Debug\net7.0\NS.FRN.Data.csproj.AssemblyReference.cache
+C:\Users\diksha.dahiya\FRN\NS.FRN.Data\obj\Debug\net7.0\NS.FRN.Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\diksha.dahiya\FRN\NS.FRN.Data\obj\Debug\net7.0\NS.FRN.Data.AssemblyInfoInputs.cache
+C:\Users\diksha.dahiya\FRN\NS.FRN.Data\obj\Debug\net7.0\NS.FRN.Data.AssemblyInfo.cs
+C:\Users\diksha.dahiya\FRN\NS.FRN.Data\obj\Debug\net7.0\NS.FRN.Data.csproj.CoreCompileInputs.cache
+C:\Users\diksha.dahiya\FRN\NS.FRN.Data\obj\Debug\net7.0\NS.FRN.Data.csproj.CopyComplete
+C:\Users\diksha.dahiya\FRN\NS.FRN.Data\obj\Debug\net7.0\NS.FRN.Data.dll
+C:\Users\diksha.dahiya\FRN\NS.FRN.Data\obj\Debug\net7.0\refint\NS.FRN.Data.dll
+C:\Users\diksha.dahiya\FRN\NS.FRN.Data\obj\Debug\net7.0\NS.FRN.Data.pdb
+C:\Users\diksha.dahiya\FRN\NS.FRN.Data\obj\Debug\net7.0\ref\NS.FRN.Data.dll
+C:\Users\diksha.dahiya\FRN\NS.FRN.Data\bin\Debug\net7.0\NS.FRN.Data.runtimeconfig.json
+C:\Users\diksha.dahiya\FRN\NS.FRN.Data\obj\Debug\net7.0\NS.FRN.Data.genruntimeconfig.cache

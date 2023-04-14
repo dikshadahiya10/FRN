@@ -1,0 +1,164 @@
+@model NS.FRN.Data.Entities.Product
+@* @{ Layout= "../../views/shared/_Layout3.cshtml"; *@
+@* } *@
+<h2 class="text-center">Add New Furniture</h2>
+@using (Html.BeginForm("AddFurnitureDetail", "Home", FormMethod.Post, new {id="formRegistration",enctype="multipart/form-data"}))
+{
+@* <div class="form-group">
+   <label for="First Name" class="col-md-3 control-label">First Name</label>
+    <div class="col-md-9">
+      @Html.HiddenFor(x=>x.Id)
+      @Html.TextBoxFor(x =>x.Id, "", new { @class = "form-control", placeholder = "Enter your Fullname" })
+    @Html.ValidationMessageFor(x => x.Id,"",new{@class="text-danger"})
+   </div> *@
+@* </div> *@
+@* <br/>
+<div class="form-group">
+   <label for="First Name" class="col-md-3 control-label">CategoryId</label>
+    <div class="col-md-9">
+     
+      @Html.TextBoxFor(x =>x.CategoryId, "", new { @class = "form-control", placeholder = " Enter your CategoryId" })
+    @Html.ValidationMessageFor(x => x.CategoryId,"",new{@class="text-danger"})
+   </div>
+</div>
+<br/> *@
+ @* <div class="form-group">
+    <label for="Role" class="col-md-3 control-label">Role</label>
+    <div class="col-md-9">
+        @Html.DropDownListFor(x => x.RoleId,
+            new SelectList(Enum.GetValues(typeof(SelectRoleId))),
+            "Select your Role",new{@class="form-control"})
+             @Html.ValidationMessageFor(x => x.RoleId,"",new{@class="text-danger"} )
+    </div>
+</div> *@
+
+ @* <div class="form-group">
+   <label for="lastname" class="col-md-3 control-label">ProfilePic</label>
+<div class="col-md-9">
+   <input type="file" name="Photo"/>
+     @Html.ValidationMessageFor(x => x.Photo,"",new{@class="text-danger"})
+</div>
+</div>  *@
+<br/>
+<div class="form-group">
+   <label for="email" class="col-md-3 control-label">Name</label>
+<div class="col-md-9">
+   @Html.TextBoxFor(x => x.Name, "", new { @class = "form-control", placeholder = "Enter your Name" })
+   @Html.ValidationMessageFor(x => x.Name,"",new{@class="text-danger"})
+    @Html.HiddenFor(x=>x.Id)
+
+   </div>
+   </div>
+   <br/>
+<div class="form-group">
+   <label for="First Name" class="col-md-3 control-label">Category</label>
+    <div class="col-md-9">
+     
+       @Html.DropDownListFor(x =>x.Category,new SelectList(ViewBag.CategoryList,"Id", "Name"),new{@class = "form-control"})
+      @* <select asp-for="CategoryId"
+                    class="form-control"
+                    asp-items="@(new SelectList(ViewBag.CategoryList,"Id", "Name"))"></select> *@
+
+    @Html.ValidationMessageFor(x => x.Category,"",new{@class="text-danger"})
+   </div>
+</div>
+
+   <br>
+   <div class="form-group">
+   <label for="email" class="col-md-3 control-label">Price</label>
+<div class="col-md-9">
+   @Html.TextBoxFor(x => x.Price, "", new { @class = "form-control", placeholder = "Enter the Price" })
+   @Html.ValidationMessageFor(x => x.Price,"",new{@class="text-danger"})
+   </div>
+</div>
+<br/>
+<div class="form-group">
+   <label for="password" class="col-md-3 control-label">Description</label>
+<div class="col-md-9">
+   @Html.TextBoxFor(x => x.Description, new { @class = "form-control", placeholder = "Enter the description here" })
+    @Html.ValidationMessageFor(x => x.Description,"",new{@class="text-danger"})
+</div>
+</div>
+
+@* <br/>
+<div class="form-group">
+   <label for="contact" class="col-md-3 control-label">IsEligibleForDiscount</label>
+<div class="col-md-9">
+   @Html.TextBoxFor(x => x.IsEligibleForDiscount, new { @class = "form-control", placeholder = "IsEligibleForDiscount" })
+   @Html.ValidationMessageFor(x => x.IsEligibleForDiscount,"",new{@class="text-danger"})
+</div>
+</div>
+<br />
+<div class="form-group">
+   <label for="contact" class="col-md-3 control-label">IsActive</label>
+<div class="col-md-9">
+   @Html.TextBoxFor(x => x.IsActive, new { @class = "form-control", placeholder = "IsActive" })
+   @Html.ValidationMessageFor(x => x.IsActive,"",new{@class="text-danger"})
+</div>
+</div>
+<br />
+<div class="form-group">
+   <label for="contact" class="col-md-3 control-label">IsDeleted</label>
+<div class="col-md-9">
+   @Html.TextBoxFor(x => x.IsDeleted, new { @class = "form-control", placeholder = "IsDeleted" })
+   @Html.ValidationMessageFor(x => x.IsDeleted,"",new{@class="text-danger"})
+</div>
+</div>
+<br />
+<div class="form-group">
+   <label for="contact" class="col-md-3 control-label">CreatedOn</label>
+<div class="col-md-9">
+   @Html.TextBoxFor(x => x.CreatedOn, new { @class = "form-control", placeholder = "CreatedOn" })
+   @Html.ValidationMessageFor(x => x.CreatedOn,"",new{@class="text-danger"})
+</div>
+</div>
+<br/>
+<div class="form-group">
+   <label for="contact" class="col-md-3 control-label">CreatedBy</label>
+<div class="col-md-9">
+   @Html.TextBoxFor(x => x.CreatedBy, new { @class = "form-control", placeholder = "CreatedBy" })
+   @Html.ValidationMessageFor(x => x.CreatedBy,"",new{@class="text-danger"})
+</div>
+</div>
+<br/>
+<div class="form-group">
+   <label for="contact" class="col-md-3 control-label">ModifiedBy</label>
+<div class="col-md-9">
+   @Html.TextBoxFor(x => x.ModifiedBy, new { @class = "form-control", placeholder = "ModifiedBy" })
+   @Html.ValidationMessageFor(x => x.ModifiedBy,"",new{@class="text-danger"})
+</div>
+</div>
+<br/>
+<div class="form-group">
+   <label for="contact" class="col-md-3 control-label">ModifiedOn </label>
+<div class="col-md-9">
+   @Html.TextBoxFor(x => x.ModifiedOn , new { @class = "form-control", placeholder = "ModifiedOn" })
+   @Html.ValidationMessageFor(x => x.ModifiedOn ,"",new{@class="text-danger"} )
+</div>
+</div> 
+<br/> *@
+<br>
+<div class="form-group">
+   <label for="Profile" class="col-md-3 control-label">Furniture Photo</label>
+<div class="col-md-9">
+   <input type="file" name="furniturePhoto"/>
+</div>
+</div>
+<br>
+<div class="col-md-offset-3 col-md-9">
+   <button id="btn-signup" type="submit" class="btn btn-info"><i class="icon-hand-right"></i>Submit</button>
+   <span style="margin-left:8px;"></span>
+</div>
+}
+
+
+
+
+
+
+
+
+
+
+
+

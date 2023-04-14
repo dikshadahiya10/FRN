@@ -1,0 +1,100 @@
+@model IEnumerable<NS.FRN.Data.Entities.User>;
+@{
+    }
+<style>
+    table {
+        border-collapse: collapse;
+        width: 100%;
+    }
+    th, td {
+        padding: 8px;
+        text-align: left;
+    }
+    th {
+        background-color: #4CAF50;
+        color: white;
+    }
+    tr:nth-child(even) {
+        background-color: #F2F2F2;
+    }
+    a {
+        color: #4CAF50;
+        text-decoration: none;
+    }
+    a:hover {
+        color: #4CAF50;
+        text-decoration: underline;
+    }
+</style>
+<div>
+    <h2>User Details</h2>
+</div>
+<table>
+    <thead>
+        <tr>
+            <th>FirstName</th>
+             <th>LastName</th>
+              @* <th>Age</th> *@
+               <th>Email</th>
+                <th>Password</th>
+                 <th>PhoneNo</th>
+                  <th>Address</th>
+                   @* <th>ProfilePic</th> *@
+                    @* <th>RoleId</th>
+                     <th>City</th>
+                      <th>State</th>
+                       <th>Country</th> *@
+                        <th>Pincode</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach(var prod in Model)
+        {
+            <tr>
+                <td>
+                   @prod.FirstName
+                </td>
+
+                <td>
+                   @prod.LastName
+                </td>
+                <td>
+                   @prod.Email
+                </td>
+
+                <td>
+                   @prod.Password
+                </td>
+
+                <td>
+                   @prod.PhoneNo
+                </td>
+
+                <td>
+                   @prod.Address
+                </td>
+              
+                @* <td>
+                   @prod.RoleId
+                </td>
+
+                <td>
+                   @prod.City
+                </td>
+
+                <td>
+                   @prod.State
+                </td>
+
+                <td>
+                   @prod.Country
+                </td> *@
+
+                <td>
+                   @prod.Pincode
+                </td>
+               
+           </tr>
+        }
+    </tbody>
+</table>

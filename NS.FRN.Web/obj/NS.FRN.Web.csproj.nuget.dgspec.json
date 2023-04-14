@@ -1,0 +1,331 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\diksha.dahiya\\FRN\\NS.FRN.Web\\NS.FRN.Web.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\diksha.dahiya\\FRN\\NS.FRN.Business\\NS.FRN.Business.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\diksha.dahiya\\FRN\\NS.FRN.Business\\NS.FRN.Business.csproj",
+        "projectName": "NS.FRN.Business",
+        "projectPath": "C:\\Users\\diksha.dahiya\\FRN\\NS.FRN.Business\\NS.FRN.Business.csproj",
+        "packagesPath": "C:\\Users\\diksha.dahiya\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\diksha.dahiya\\FRN\\NS.FRN.Business\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\diksha.dahiya\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "C:\\Users\\diksha.dahiya\\FRN\\NS.FRN.Models\\NS.FRN.Models.csproj": {
+                "projectPath": "C:\\Users\\diksha.dahiya\\FRN\\NS.FRN.Models\\NS.FRN.Models.csproj"
+              },
+              "C:\\Users\\diksha.dahiya\\FRN\\NS.FRN.Repository\\NS.FRN.Repository.csproj": {
+                "projectPath": "C:\\Users\\diksha.dahiya\\FRN\\NS.FRN.Repository\\NS.FRN.Repository.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\diksha.dahiya\\FRN\\NS.FRN.Data\\NS.FRN.Data.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\diksha.dahiya\\FRN\\NS.FRN.Data\\NS.FRN.Data.csproj",
+        "projectName": "NS.FRN.Data",
+        "projectPath": "C:\\Users\\diksha.dahiya\\FRN\\NS.FRN.Data\\NS.FRN.Data.csproj",
+        "packagesPath": "C:\\Users\\diksha.dahiya\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\diksha.dahiya\\FRN\\NS.FRN.Data\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\diksha.dahiya\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "C:\\Users\\diksha.dahiya\\FRN\\NS.FRN.Models\\NS.FRN.Models.csproj": {
+                "projectPath": "C:\\Users\\diksha.dahiya\\FRN\\NS.FRN.Models\\NS.FRN.Models.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[7.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\diksha.dahiya\\FRN\\NS.FRN.Models\\NS.FRN.Models.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\diksha.dahiya\\FRN\\NS.FRN.Models\\NS.FRN.Models.csproj",
+        "projectName": "NS.FRN.Models",
+        "projectPath": "C:\\Users\\diksha.dahiya\\FRN\\NS.FRN.Models\\NS.FRN.Models.csproj",
+        "packagesPath": "C:\\Users\\diksha.dahiya\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\diksha.dahiya\\FRN\\NS.FRN.Models\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\diksha.dahiya\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "System.ComponentModel.Annotations": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\diksha.dahiya\\FRN\\NS.FRN.Repository\\NS.FRN.Repository.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\diksha.dahiya\\FRN\\NS.FRN.Repository\\NS.FRN.Repository.csproj",
+        "projectName": "NS.FRN.Repository",
+        "projectPath": "C:\\Users\\diksha.dahiya\\FRN\\NS.FRN.Repository\\NS.FRN.Repository.csproj",
+        "packagesPath": "C:\\Users\\diksha.dahiya\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\diksha.dahiya\\FRN\\NS.FRN.Repository\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\diksha.dahiya\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "C:\\Users\\diksha.dahiya\\FRN\\NS.FRN.Data\\NS.FRN.Data.csproj": {
+                "projectPath": "C:\\Users\\diksha.dahiya\\FRN\\NS.FRN.Data\\NS.FRN.Data.csproj"
+              },
+              "C:\\Users\\diksha.dahiya\\FRN\\NS.FRN.Models\\NS.FRN.Models.csproj": {
+                "projectPath": "C:\\Users\\diksha.dahiya\\FRN\\NS.FRN.Models\\NS.FRN.Models.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\diksha.dahiya\\FRN\\NS.FRN.Web\\NS.FRN.Web.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\diksha.dahiya\\FRN\\NS.FRN.Web\\NS.FRN.Web.csproj",
+        "projectName": "NS.FRN.Web",
+        "projectPath": "C:\\Users\\diksha.dahiya\\FRN\\NS.FRN.Web\\NS.FRN.Web.csproj",
+        "packagesPath": "C:\\Users\\diksha.dahiya\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\diksha.dahiya\\FRN\\NS.FRN.Web\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\diksha.dahiya\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "C:\\Users\\diksha.dahiya\\FRN\\NS.FRN.Business\\NS.FRN.Business.csproj": {
+                "projectPath": "C:\\Users\\diksha.dahiya\\FRN\\NS.FRN.Business\\NS.FRN.Business.csproj"
+              },
+              "C:\\Users\\diksha.dahiya\\FRN\\NS.FRN.Data\\NS.FRN.Data.csproj": {
+                "projectPath": "C:\\Users\\diksha.dahiya\\FRN\\NS.FRN.Data\\NS.FRN.Data.csproj"
+              },
+              "C:\\Users\\diksha.dahiya\\FRN\\NS.FRN.Models\\NS.FRN.Models.csproj": {
+                "projectPath": "C:\\Users\\diksha.dahiya\\FRN\\NS.FRN.Models\\NS.FRN.Models.csproj"
+              },
+              "C:\\Users\\diksha.dahiya\\FRN\\NS.FRN.Repository\\NS.FRN.Repository.csproj": {
+                "projectPath": "C:\\Users\\diksha.dahiya\\FRN\\NS.FRN.Repository\\NS.FRN.Repository.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "BCrypt.Net-Next": {
+              "target": "Package",
+              "version": "[4.0.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

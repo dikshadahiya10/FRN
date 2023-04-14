@@ -1,0 +1,62 @@
+@model IEnumerable<NS.FRN.Data.Entities.Product>;
+    @{
+   Layout= "../../views/shared/_Layout2.cshtml";
+   
+}
+
+
+		<!--new-arrivals start -->
+		<section id="new-arrivals" class="new-arrivals">
+			<div class="container">
+				<div class="section-header">
+					<h2>Furniture arrivals</h2>
+				</div><!--/.section-header-->
+				<div class="Furniture-arrivals-content">
+					<div class="row">
+  @foreach(var prod in Model)
+        {
+						<div class="col-md-3 col-sm-4">
+							<div class="single-new-arrival">
+								<div class="single-new-arrival-bg">
+									<img src="~/Uploads/@prod.Photo" alt="new-arrivals images">
+									<div class="single-new-arrival-bg-overlay"></div>
+									<div class="sale bg-1">
+										<p>sale</p>
+									</div>
+									<div class="new-arrival-cart">
+										<p>
+											<span class="lnr lnr-cart"></span>
+											<a asp-action="AddToCart" asp-controller="Furniture" asp-route-id="@prod.Id">add <span>to </span> cart</a>
+										</p>
+										<p class="arrival-review pull-right">
+											<span class="lnr lnr-heart"></span>
+											<span class="lnr lnr-frame-expand"></span>
+										</p>
+									</div>
+								</div>
+								<h4><a href="#">@prod.Name</a></h4>
+								<p class="arrival-product-price">@prod.Price</p>
+							</div>
+						</div>
+        }
+                        </div>
+				</div>
+			</div><!--/.container-->
+		  
+		</section><!--/.new-arrivals-->
+
+		<!--new-arrivals end -->
+           @* @foreach (var prod in Model)
+        {
+            <tr>
+                
+                <td>
+                   @if(prod.IsActive){
+                         @Html.ActionLink("DeActivate","ActivateDeactivateCategory","Category",new{prod.Id},new{@class="btn btn-danger",onclick="return confirm('Do you really want to Deactivate this category')"})
+                    }
+                    else{
+                          @Html.ActionLink("Activate","ActivateDeactivateCategory","Category",new{prod.Id},new{@class="btn btn-danger",onclick="return confirm('Do you really want to Activate this category')"})
+                    }
+                </td>
+            </tr>
+        } *@

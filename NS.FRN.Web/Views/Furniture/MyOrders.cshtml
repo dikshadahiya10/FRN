@@ -1,0 +1,98 @@
+@model IEnumerable<NS.FRN.Data.Entities.OrderReceived>
+@{ Layout= "../../views/shared/_Layout2.cshtml";
+
+}
+    <style>
+    table {
+        border-collapse: collapse;
+        width: 100%;
+    }
+    th, td {
+        padding: 8px;
+        text-align: left;
+    }
+    th {
+        background-color: #4CAF50;
+        color: white;
+    }
+    tr:nth-child(even) {
+        background-color: #F2F2F2;
+    }
+    a {
+        color: #4CAF50;
+        text-decoration: none;
+    }
+    a:hover {
+        color: #4CAF50;
+        text-decoration: underline;
+    }
+</style>
+ <div class="col-md-12 text-center">
+       <h1>My Orders</h1>
+</div>
+</div>
+<div class="container">
+
+<table>
+    <thead>
+        <tr>
+    
+         <th>Order Id</th>
+         <th>Product Name</th>
+         <th>Price</th>
+         <th>Quantity</th>
+        <th>Order Date-Time</th>
+        </tr>
+    </thead>
+    <tbody>
+      @if(Model!=null && Model.Count()==0)
+      {
+    <div style="text-align:center;"><h3 style="text-align: center;color:red">You have no Items in Cart.</h3></div>
+      }
+     else {
+       foreach(var prod in Model)
+        {<tr>
+                <td>
+                   @prod.OrderDetailId
+                </td>
+
+                <td>
+                   @prod.Product.Name
+                </td>
+                <td>
+                   @prod.Price
+                </td>
+
+                <td>
+                   @prod.Quantity
+                </td>
+
+                <td>
+                   @prod.CreatedOn
+                </td>
+
+              
+               
+           </tr>
+        }}
+            @* var prod=Model.ToList()[i];
+            <tr>
+                
+                <td>
+                   @prod.OrderDetailId
+                    @Html.HiddenFor(x=>Model.ToList()[i].Product.Id)
+                     @Html.HiddenFor(x=>Model.ToList()[i].Id)
+                </td>
+                 <td>
+                      @prod.Quantity
+                     @Html.HiddenFor(x=>@Model.ToList()[i].Quantity)
+
+                </td>
+                 <td>
+                   @Html.HiddenFor(x=>@Model.ToList()[i].Product.Price)
+                     ₹ @prod.Product.Price
+                </td>
+            </tr> *@
+        
+    </tbody>
+</table>

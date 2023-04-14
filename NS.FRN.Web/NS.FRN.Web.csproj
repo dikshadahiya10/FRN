@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <ItemGroup>
+    <ProjectReference Include="..\NS.FRN.Data\NS.FRN.Data.csproj" />
+    <ProjectReference Include="..\NS.FRN.Models\NS.FRN.Models.csproj" />
+    <ProjectReference Include="..\NS.FRN.Business\NS.FRN.Business.csproj" />
+    <ProjectReference Include="..\NS.FRN.Repository\NS.FRN.Repository.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="BCrypt.Net-Next" Version="4.0.3" />
+  </ItemGroup>
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+</Project>
+             

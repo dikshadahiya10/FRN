@@ -1,0 +1,12 @@
+C:\Users\diksha.dahiya\FRN\NS.FRN.Models\bin\Debug\net7.0\NS.FRN.Models.deps.json
+C:\Users\diksha.dahiya\FRN\NS.FRN.Models\bin\Debug\net7.0\NS.FRN.Models.dll
+C:\Users\diksha.dahiya\FRN\NS.FRN.Models\bin\Debug\net7.0\NS.FRN.Models.pdb
+C:\Users\diksha.dahiya\FRN\NS.FRN.Models\obj\Debug\net7.0\NS.FRN.Models.csproj.AssemblyReference.cache
+C:\Users\diksha.dahiya\FRN\NS.FRN.Models\obj\Debug\net7.0\NS.FRN.Models.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\diksha.dahiya\FRN\NS.FRN.Models\obj\Debug\net7.0\NS.FRN.Models.AssemblyInfoInputs.cache
+C:\Users\diksha.dahiya\FRN\NS.FRN.Models\obj\Debug\net7.0\NS.FRN.Models.AssemblyInfo.cs
+C:\Users\diksha.dahiya\FRN\NS.FRN.Models\obj\Debug\net7.0\NS.FRN.Models.csproj.CoreCompileInputs.cache
+C:\Users\diksha.dahiya\FRN\NS.FRN.Models\obj\Debug\net7.0\NS.FRN.Models.dll
+C:\Users\diksha.dahiya\FRN\NS.FRN.Models\obj\Debug\net7.0\refint\NS.FRN.Models.dll
+C:\Users\diksha.dahiya\FRN\NS.FRN.Models\obj\Debug\net7.0\NS.FRN.Models.pdb
+C:\Users\diksha.dahiya\FRN\NS.FRN.Models\obj\Debug\net7.0\ref\NS.FRN.Models.dll
